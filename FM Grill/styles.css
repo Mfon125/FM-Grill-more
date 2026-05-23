@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #111;
+  color: white;
+}
+
+/* HEADER */
+.hero {
+  padding: 15px 20px;
+  background: #111;
+  position: relative;
+}
+
+/* FLEX ALIGNMENT */
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* LOGO */
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ff416c;
+}
+
+/* TEXT */
+h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* MENU */
+.menu {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* FOOD ITEMS */
+.item {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background: #1c1c1c;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #ff416c;
+}
+
+.item img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item h3 {
+  margin: 0;
+}
+
+.item span {
+  color: #ff416c;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.order-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 15px;
+  background: linear-gradient(to right, #25D366, #128C7E);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+    }
+
+.order-btn:hover{
+  box-shadow: 0 0 10px #25D366;
+  transform: scale(1.05);
+}
+  
+
+
+/* Tablet */
+@media (min-width: 600px) {
+  .menu {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Laptop */
+@media (min-width: 900px) {
+  .menu {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .categories {
+  display: flex;
+  gap: 10px;
+  padding: 10px 20px;
+  overflow-x: auto;
+}
+
+.categories button {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.categories button:hover {
+  background: #ff416c;
+  box-shadow: 0 0 10px #ff416c;
+}
